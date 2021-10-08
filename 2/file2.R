@@ -1,0 +1,7 @@
+install.packages("mice")
+library(mice)
+mhd = read.csv('/cloud/project/melb_data.csv')
+md.pattern(mhd)
+help("colSums")
+colSums(is.na(mhd))
+mean(mhd$YearBuilt,na.rm=TRUE)
